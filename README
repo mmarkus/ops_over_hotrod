@@ -1,0 +1,2 @@
+This project provides support for running various opearations over hotrod: e.g. transactions, distributed-executors and map/reduce, query-ing etc.
+These operations are not yet supported by hotrod, but they will be in future releases. As there is a significant demand on forums from users needing to run these operations, this project represents an workaround to help users achive this functionaly. This should be replaced with actual operation calls once they are available directly through Hotrod. 

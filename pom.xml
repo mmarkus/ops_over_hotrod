@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>ops_over_hotrod</groupId>
+   <artifactId>ops_over_hotrod</artifactId>
+   <description>Prototype misc operations running over hotrod</description>
+   <version>1.0</version>
+
+   <properties>
+      <ispn.project.version>5.0.0.CR5</ispn.project.version>
+   </properties>
+
+   <dependencies>
+
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-core</artifactId>
+         <version>${ispn.project.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-server-core</artifactId>
+         <version>${ispn.project.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-core</artifactId>
+         <version>${ispn.project.version}</version>
+         <type>test-jar</type>
+         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-core</artifactId>
+         <version>${ispn.project.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-client-hotrod</artifactId>
+         <version>${ispn.project.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-client-hotrod</artifactId>
+         <type>test-jar</type>
+         <scope>test</scope>
+         <version>${ispn.project.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-server-hotrod</artifactId>
+         <version>${ispn.project.version}</version>
+         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+         <groupId>org.infinispan</groupId>
+         <artifactId>infinispan-server-hotrod</artifactId>
+         <version>${ispn.project.version}</version>
+         <type>test-jar</type>
+         <scope>test</scope>
+      </dependency>
+
+
+
+      <dependency>
+         <groupId>org.testng</groupId>
+         <artifactId>testng</artifactId>
+         <version>5.11</version>
+         <scope>test</scope>
+         <classifier>jdk15</classifier>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.jbossts</groupId>
+         <artifactId>jbossjta</artifactId>
+         <version>4.15.0.Final</version>
+         <scope>test</scope>
+         <exclusions>
+            <exclusion>
+               <groupId>org.jboss.logging</groupId>
+               <artifactId>jboss-logging-spi</artifactId>
+            </exclusion>
+         </exclusions>
+      </dependency>
+
+      <dependency>
+         <groupId>commons-logging</groupId>
+         <artifactId>commons-logging</artifactId>
+         <version>1.1</version>
+      </dependency>
+
+      <dependency>
+         <groupId>log4j</groupId>
+         <artifactId>log4j</artifactId>
+         <version>1.2.16</version>
+         <optional>true</optional>
+      </dependency>
+
+   </dependencies>
+
+   <repositories>
+      <repository>
+         <id>jboss-public-repository</id>
+         <name>JBoss Public Repository and Proxy for third party repositories</name>
+         <url>https://repository.jboss.org/nexus/content/groups/public</url>
+         <snapshots>
+            <enabled>true</enabled>
+         </snapshots>
+         <releases>
+            <enabled>true</enabled>
+         </releases>
+      </repository>
+   </repositories>
+
+
+</project>
