@@ -1,4 +1,9 @@
-This project provides support for running various operations over hotrod: e.g. transactions, distributed-executors and map/reduce, queries etc.
-These operations are not yet supported by hotrod, but they will be in future releases.
-As there is a significant demand from Infinispan's community for running these operations, this project provides a way to run these operations.
-Once these operations will be supported natively by hotrod, it
+Current hotrod specifications (and existing clients) do not support a set of features which are highly requested by Infinispan's community.
+Namely:
+- transactions over hotrod
+- map/reduce and distributed executors over hotrod
+- querying over hotrod
+
+This small project adds a workaround to support running the above mentioned functionality over hotrod.
+Currently, the only supported functionality is transactions over hotrod. Querying and map/reduce can also be build in a
+similar fashion to transactions.

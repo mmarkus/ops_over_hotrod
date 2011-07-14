@@ -28,9 +28,17 @@ import java.util.concurrent.TimeUnit;
  *    assert remoteCache.get("k").equals("v");
  * </code>
  * </pre>
- * Important: this class is NOT thread safe and should not be used from more than a thread at a time. If multiple
+ * Limitations:
+ * <p/>
+ * - the current implementation does not returns previous existing values. e.g. cache.put(k,v) always returns null,
+ * disregarding weather there is a value for in the cache for k or not.
+ * <p/>
+ * - this class is NOT thread safe and should not be used from more than a thread at a time. If multiple
  * threads want to run transactions concurrently on top of the same {@link RemoteCache}, each such thread should build its own
  * instance of BatchEnabledRemoteCache.
+ * <p/>
+ * - atomic operations as defined within {@link java.util.concurrent.ConcurrentMap} are not supported, and an exception
+ * is thrown if such an operations is invoked
  *
  * @author Mircea Markus
  */
