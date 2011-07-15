@@ -5,7 +5,7 @@ Namely:
 - querying over hotrod
 
 This small project adds a workaround to support running the above mentioned functionality over hotrod.
-Currently, the only supported functionality is transactions over hotrod. Querying and map/reduce can also be build in a
+At the moment support for transactions over hotrod was added. Querying and map/reduce can also be build in a
 similar fashion to transactions.
 
 For running transactions over hotrod please refer to this document: https://github.com/mmarkus/ops_over_hotrod/wiki/Usage-guide
